@@ -1,13 +1,148 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/vite-project/assets/index-B8TTEP0E.js"></script>
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shop | eCommers</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="module" crossorigin src="/vite-project/assets/index-B8NDpJPk.js"></script>
+  <link rel="stylesheet" crossorigin href="/vite-project/assets/index-6UUDJccd.css">
+</head>
   <body>
-    <div id="root"></div>
+    <!-- Header Section -->
+      <header>
+        <!-- Logo -->
+        <div class="product-logo">
+            <img class="logo-img" src="data:image/webp;base64,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">
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <!-- Search Button -->
+            <div class="search-btn-div">                
+                <button class="search-btn" id="js-search-btn">
+                    <i class='bx bx-search'></i>
+                </button>               
+            </div>
+            <!-- User Button -->
+            <div class="user-btn">
+                <a href="/User-registration-form/login.html" target="_blank">
+                    <button>
+                        <i class='bx bxs-user'></i>
+                    </button>
+                </a>
+            </div>
+            <!-- Cart Button -->
+            <div class="cart-btn">
+                <a href="#" target="_blank">
+                    <button>
+                        <i class='bx bxs-cart'></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+      </header>
+      <!-- Main Content Section -->
+      <main>
+        <!-- Menu Row Section -->
+        <section class="menu-row">
+            <!-- Menu Button -->
+            <div class="menu-div">
+                <button class="menu-btn" id="js-menu-btn">
+                    MENU <i class='bx bx-menu'></i>
+                </button>
+            </div>
+            <!-- Menu List Placeholder -->
+            <div class="menu-list" id="js-menu-list">                
+            </div>
+            <!-- Search Box Placeholder -->
+            <div class="search-box" id="js-search-box">                 
+            </div>
+        </section>
+        <!-- Hero Section with Collection Grid -->
+        <section class="hero-section">            
+            <!-- Collection Grid for Men's, Women's, and Baby's Collections -->
+            <div class="collection-grid">
+                <!-- Men's Collection -->     
+                  <div class="mens-collection">
+                    <img class="collection-img" src="/vite-project/assets/items1.jpg-BVDdwWrn.webp" alt="men's Collection">
+                    <span>men's Collection</span>
+                </div>          
+                <div class="womens-collection">
+                    <img class="collection-img" src="/Umar-Projects//E-Commerce-Website/product-images/product-image4.jpeg" alt="Women's Collection">
+                    <span>Women's Collection</span>
+                </div>
+                <div class="baby-collection">
+                    <img class="collection-img" src="/vite-project/assets/items3.jpg-xEtcIiq5.webp" alt="Baby's Collection">
+                    <span>Baby's Collection</span>
+                </div>
+            </div>
+        </section>        
+      </main>
+      <!-- Footer Section -->
+      <footer>
+        <!-- Links Sections -->
+        <section class="links-sections"> 
+            <!-- Footer Logo -->
+            <section class="footer-logo">
+                <img src="data:image/webp;base64,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" alt="Capital Shop Footer Logo">
+            </section>
+            <!-- Links for Men's, Women's, Baby's, and Quick Links -->
+            <div class="link">
+                <h1>Men's Section</h1>
+                <!-- Men's Section Links -->
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>                                                                            
+            </div>
+              <div class="link">
+                <h1>Women's Section</h1>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>                                           
+            </div>
+            <div class="link">
+                <h1>Baby's Collection</h1>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>                                           
+            </div>
+            <div class="link">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/Contact Me/index.html" target="_blank">Contact Us</a></li>                  
+                </ul>                                                                                               
+            </div>            
+            
+        </section>
+        <!-- Copyright Section -->
+        <section class="copyright-section">
+            <!-- Copyright Information -->
+            <span>Copyright &copy; 2024 All rights reserved</span>            
+        </section>
+      </footer>
+      <div id="root"></div>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
   </body>
 </html>
+ 
