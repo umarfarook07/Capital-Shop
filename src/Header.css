@@ -1,0 +1,104 @@
+/* header.css */
+header {
+  position: fixed;
+  background-color: rgb(249, 246, 241);     
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid grey;
+  width: 100%;
+  z-index: 1000;
+}
+
+header, nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav button {
+  margin: 0 10px;
+}
+
+.product-logo, .footer-logo {
+  width:200px;
+  padding: 18px;
+}
+
+.product-logo img {
+  width: 100%;
+}
+
+.nav-bar button {
+  width:50px;
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-bar button i {
+  font-size:25px;
+}
+.nav-bar button:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-nav li {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.menu-nav a:hover {
+  color: red;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.search-box {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: ZoomOut 0.5s ease-out forwards; 
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 8px;
+  font-size: 16px;
+  background-color: red;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.search-box input::placeholder {
+  color: white;
+}
+
+@keyframes ZoomOut {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

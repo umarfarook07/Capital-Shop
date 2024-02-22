@@ -1,49 +1,4 @@
-/* header.css */
-header {
-    position: fixed;
-    background-color: rgb(249, 246, 241);     
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 2px solid grey;
-    width: 100%;
-    z-index: 1000;
-}
 
-header, nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav button {
-    margin: 0 10px;
-}
-
-.product-logo, .footer-logo {
-    width:200px;
-    padding: 18px;
-}
-
-.product-logo img {
-    width: 100%;
-}
-
-.nav-bar button {
-    width:50px;
-    background-color: transparent;
-    border: none;
-}
-
-.nav-bar button:hover {
-    color: red;
-    transform: scale(0.9);
-}
-
-.nav-bar button i {
-    font-size:25px;
-}
 /* Menu Styles */
 
 @keyframes slideIn {
@@ -156,14 +111,7 @@ input::placeholder {
     display: block;
     animation: slideIn 0.5s ease-in-out;
 }
-.nav-bar button {
-    transition: color 0.3s ease, transform 0.3s ease;
-}
 
-.nav-bar button:hover {
-    color: red;
-    transform: scale(1.1);
-}
 .menu-list li {
     list-style: none;
     line-height: 40px;
