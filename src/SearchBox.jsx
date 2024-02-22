@@ -1,7 +1,7 @@
 // SearchBox.js
 import React from 'react';
 
-function SearchBox({ show }) {
+function SearchBox({ show, onClose }) {
   if (!show) {
     return null;
   }
@@ -9,6 +9,7 @@ function SearchBox({ show }) {
   return (
     <div className="search-box">
       <input type="text" placeholder="Search..." />
+      <div className="cancel-btn" onClick={onClose}><span>X</span></div>
     </div>
   );
 }

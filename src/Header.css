@@ -72,23 +72,32 @@ header nav button {
   top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: ZoomOut 0.5s ease-out forwards; 
+  color: black;
+  background-color: red;
+  border-radius: 5px;
 }
 
 .search-box input {
   width: 100%;
   padding: 10px 8px;
   font-size: 16px;
-  background-color: red;
+  background-color: transparent;
   border: none;
   outline: none;
-  border-radius: 5px;
   color: white;
 }
 
 .search-box input::placeholder {
+  color: white;
+}
+.cancel-btn {
+  cursor: pointer;
+  padding: 0 10px;
   color: white;
 }
 
