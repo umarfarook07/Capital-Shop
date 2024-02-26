@@ -1,1 +1,1 @@
-Shop-eCommerce:https://umarfarook07.github.io/vite-project/
+Shop-eCommerce:https://umarfarook07.github.io/Capital-Shop/
