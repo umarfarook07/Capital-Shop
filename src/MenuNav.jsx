@@ -1,4 +1,3 @@
-// MenuNav.js
 function MenuNav() {
   return (
     <div className="menu-nav">

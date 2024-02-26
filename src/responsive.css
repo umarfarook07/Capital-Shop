@@ -5,6 +5,10 @@
     .menu-nav{
         display: none;
     }
+    .menu-row{
+        display: flex;
+        margin-top: 130px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     header{
@@ -14,6 +18,7 @@
         display: none;
     }
     .menu-row{
+        display: flex;
         margin-top: 100px;
     }
 }
@@ -23,7 +28,7 @@
         flex-direction: row;
     }
     .menu-nav{
-        display: inline;
+        display: block;
     }
     .menu-nav a{
         font-size: 14px;
@@ -39,7 +44,7 @@
         flex-direction: row;
     }
     .menu-nav{
-        display: inline;
+        display: block;
     }
     .menu-row{
         display: none;
