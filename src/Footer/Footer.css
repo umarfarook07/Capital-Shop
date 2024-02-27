@@ -4,7 +4,6 @@
     gap: 20px;
     border-bottom: 2px solid grey;
     border-top: 2px solid grey;
-    margin: 10px auto;
     background-color: black;
     color: white;
     padding: 20px;
@@ -15,7 +14,9 @@
     font-size: 14px;
     margin: 10px;
 }
-
+.link h1{
+    color: red;
+}
 .link li {
     list-style: none;
     line-height: 24px;
@@ -35,5 +36,6 @@
     color: #ccc;
     font-size: 14px;
     text-align: center;
-    margin-bottom: 10px;
+    background-color: black;
+    margin-top: 0;
 }

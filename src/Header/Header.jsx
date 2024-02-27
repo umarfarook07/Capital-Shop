@@ -1,8 +1,6 @@
 import { useState } from "react";
-import LogoImage from "./logos/logo.webp";
+import LogoImage from "/src/logos/logo.webp";
 import "./Header.css";
-
-
 import MenuNav from "./MenuNav";
 import SearchBox from "./SearchBox";
 

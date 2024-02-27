@@ -120,8 +120,3 @@ main {
     transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-section {
-        margin: auto 20px;
-    }
-}

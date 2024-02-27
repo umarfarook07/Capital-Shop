@@ -1,8 +1,7 @@
+import './MenuStyles.css';
 import React, { useState } from 'react';
-
-
 const Menu = () => {
-  const [isMenuVisible, setIsMenuVisible] = useState(true);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
