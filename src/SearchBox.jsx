@@ -9,7 +9,7 @@ function SearchBox({ show, onClose }) {
   return (
     <div className="search-box">
       <input type="text" placeholder="Search..." />
-      <div className="cancel-btn" onClick={onClose}><span>X</span></div>
+      <div className="cancel-btn" onClick={onClose}>X</div>
     </div>
   );
 }
