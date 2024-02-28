@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Banner from './images/banner1.jpg';
-
+import Banner1 from './images/cover-banner1.jpg';
+import Banner2 from './images/cover-banner2.jpg';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,8 +24,8 @@ export default function SwiperMenu() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={Banner} alt="" /></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide><img src={Banner1} alt="Cover-Banner" /></SwiperSlide>
+        <SwiperSlide><img src={Banner2} alt="Cover-Banner" /></SwiperSlide>
       </Swiper>
     </>
   );
