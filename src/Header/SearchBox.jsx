@@ -1,4 +1,3 @@
-// SearchBox.js
 import React from 'react';
 
 function SearchBox({ show, onClose }) {
@@ -8,9 +7,10 @@ function SearchBox({ show, onClose }) {
 
   return (
     <div className="search-box">
-      <input type="text" placeholder="Search..." />
+      <input type="text" placeholder="Search..." autoFocus />
       <div className="close-btn" onClick={onClose}>X</div>
     </div>
   );
 }
+
 export default SearchBox;
