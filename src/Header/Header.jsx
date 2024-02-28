@@ -7,15 +7,16 @@ import LoginForm from "../User-registration-form/login";
 
 function Header() {
   const [showSearch, setShowSearch] = useState(true);
+  const [showLoginForm, setShowLoginForm] = useState(false);
 
   const toggleSearch = () => {
     setShowSearch(!showSearch);
   };
-  const [showLoginForm, setShowLoginForm] = useState(false);
+
   return (
     <header>
       <div className="product-logo">
-        <img className="logo-img" src={LogoImage} alt="Logo"></img>
+        <img className="logo-img" src={LogoImage} alt="Logo" />
       </div>
 
       <MenuNav />
@@ -32,15 +33,15 @@ function Header() {
         </div>
 
         <div className="user-btn">
-      <button onClick={() => setShowLoginForm(true)}>
-        <i className="bx bxs-user"></i>
-      </button>
-      {showLoginForm && (
-        <div style={{ position: "absolute", zIndex: 1 }}>
-          <LoginForm />
+          <button onClick={() => setShowLoginForm(true)}>
+            <i className="bx bxs-user"></i>
+          </button>
+          {showLoginForm && (
+            <div style={{ position: "absolute", zIndex: 1 }}>
+              <LoginForm />
+            </div>
+          )}
         </div>
-      )}
-    </div>
 
         <div className="cart-btn">
           <a href="#" target="_blank" rel="noopener noreferrer">
@@ -50,7 +51,8 @@ function Header() {
           </a>
         </div>
       </nav>
-      <SearchBox show={showSearch} />
+
+      <SearchBox show={showSearch} onClose={toggleSearch} />
     </header>
   );
 }
