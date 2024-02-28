@@ -5,7 +5,7 @@ import MenuNav from "./MenuNav";
 import SearchBox from "./SearchBox";
 
 function Header() {
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSearch, setShowSearch] = useState(true);
 
   const toggleSearch = () => {
     setShowSearch(!showSearch);

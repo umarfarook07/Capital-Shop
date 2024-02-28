@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import './SearchBox.css';
-const SearchBox = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const closeSearchBox = () => {
-    setIsVisible(false);
+// SearchBox.js
+import React from 'react';
+
+function SearchBox({ show, onClose }) {
+  if (!show) {
+    return null;
   }
-  return isVisible ? (
+
+  return (
     <div className="search-box">
       <input type="text" placeholder="Search..." />
-      <div className="cancel-btn" onClick={closeSearchBox}>X</div>
+      <div className="close-btn" onClick={onClose}>X</div>
     </div>
-  ) : null;
+  );
 }
-
 export default SearchBox;
