@@ -12,6 +12,12 @@
     .hero-section {
         margin: 0;
     }
+    .swiper {
+        height: 150px;
+      }
+    .swiper-slide {
+        font-size: 14px;
+    }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -27,6 +33,12 @@
     }
     .hero-section {
         margin: 0;
+    }
+    .swiper {
+        height: 150px;
+      }
+    .swiper-slide {
+        font-size: 14px;
     }
 }
 
@@ -55,6 +67,10 @@
     .search-box {
         width: 50%;
     }
+    .swiper {
+        height: 500px;
+        margin-top: 120px;
+      }
       
 }
 
@@ -81,4 +97,8 @@
     .search-box {
         width: 70%;
     }
+    .swiper {
+        height: 500px;
+        margin-top: 150px;
+      }
 }
