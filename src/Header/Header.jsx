@@ -3,7 +3,7 @@ import LogoImage from "/src/logos/logo.webp";
 import "./Header.css";
 import MenuNav from "./MenuNav";
 import SearchBox from "./SearchBox";
-import LoginForm from "../User-registration-form/login.html";
+
 
 function Header() {
   const [showSearch, setShowSearch] = useState(true);
@@ -33,15 +33,12 @@ function Header() {
         </div>
 
         <div className="user-btn">
-          <button onClick={() => setShowLoginForm(true)}>
-            <i className="bx bxs-user"></i>
-          </button>
-          {showLoginForm && (
-            <div style={{ position: "absolute", zIndex: 1 }}>
-              <LoginForm />
-            </div>
-          )}
-        </div>
+      <a href="http://localhost:3000/login" className="button-like-anchor">
+        <button>
+        <i className="bx bxs-user"></i>
+        </button>
+      </a>
+    </div>
 
         <div className="cart-btn">
           <a href="#" target="_blank" rel="noopener noreferrer">

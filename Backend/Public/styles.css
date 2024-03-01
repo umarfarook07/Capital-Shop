@@ -108,6 +108,7 @@ form{
 .footer button:hover{
     background-color: white;
     color: red;
+    border: 1px solid red;
 }
 
 
