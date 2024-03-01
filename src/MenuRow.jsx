@@ -1,19 +1,29 @@
-import React from 'react'; // Ensure React is imported if you're using a version before React 17 or not using the new JSX transform
-import './MenuRow.css';
+import './MenuRow.css'; 
 
+const MenuRow = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(true);
 
-function MenuRow() {
-    return (
-        <div className="menu-row">
-            <div className="menu-div">
-                <button className="menu-btn" id="js-menu-btn">
-                    MENU<i className='bx bx-menu'></i>
-                </button>
-            </div>
-            <div className="menu-list" id="js-menu-list">
-            </div>
-        </div>
-    );
-}
+  const toggleMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
+  return (
+    <section className="menu-row">
+      <div className="menu-div">
+        <button className="menu-btn" onClick={toggleMenu}>
+          MENU<i className='bx bx-menu'></i>
+        </button>
+      </div>
+      {isMenuVisible && (
+        <ul className="menu-list">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+        </ul>
+      )}
+    </section>
+  );
+};
 
 export default MenuRow;
