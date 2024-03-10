@@ -18,7 +18,13 @@
     .swiper-slide {
         font-size: 14px;
     }
-
+    .benefits {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  .benefit-item {
+        flex-basis: calc(50% - 20px);
+.  } 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     header{
@@ -40,6 +46,13 @@
     .swiper-slide {
         font-size: 14px;
     }
+    .benefits {
+    justify-content: space-between;
+  }
+
+  .benefit-item {
+    flex-basis: calc(50% - 20px); /* 2 items per row */
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -71,6 +84,13 @@
         height: 500px;
         margin-top: 120px;
       }
+    .benefits {
+    justify-content: space-between;
+  }
+
+  .benefit-item {
+    flex-basis: calc(50% - 20px); 
+  }
       
 }
 
@@ -101,4 +121,12 @@
         height: 500px;
         margin-top: 150px;
       }
+    .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-item {
+    flex-basis: 100%; 
+  }
 }
