@@ -5,7 +5,7 @@ import Footer from './Footer/Footer.jsx';
 import "./Styles/responsive.css";
 import SwiperMenu from './Swiper/SwiperMenu.jsx';
 import "./Styles/reset.css";
-import BenefitsSection from './BenefitsSection.jsx'
+import BenefitsSection from './BenefitsSection/BenefitsSection.jsx'
 function App() {
   return (
     <>
