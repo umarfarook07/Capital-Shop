@@ -1,9 +1,9 @@
 import React from 'react';
 import './BenefitsSection.css';
-//import img1 from './path/to/your/image1.png';
-//import img2 from './path/to/your/image2.png';
-//import img3 from './path/to/your/image3.png';
-//import img4 from './path/to/your/image4.png';
+import img1 from './Images/services1.svg';
+import img2 from './Images/services2.svg';
+import img3 from './Images/services3.svg';
+import img4 from './Images/services4.svg';
 
 function BenefitItem(props) {
   return (
