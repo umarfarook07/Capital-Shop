@@ -6,6 +6,8 @@ import "./Styles/responsive.css";
 import SwiperMenu from './Swiper/SwiperMenu.jsx';
 import "./Styles/reset.css";
 import BenefitsSection from './BenefitsSection/BenefitsSection.jsx'
+import NewsletterSubscription from './NewsletterSubscription/NewsletterSubscription.jsx'
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
       <SwiperMenu />
       <HeroSection />
       <BenefitsSection />
+      <NewsletterSubscription />
       <Footer />
     </>
   );
