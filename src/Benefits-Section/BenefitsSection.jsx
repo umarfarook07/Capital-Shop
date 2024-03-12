@@ -18,10 +18,10 @@ function BenefitItem(props) {
 function BenefitsSection() {
   return (
     <section className="benefits">
-      <BenefitItem title="Fast & Free Delivery" image="" description="Free delivery on all orders" />
-      <BenefitItem title="Secure Payments" image="" description="Transactions are encrypted and secure." />
-      <BenefitItem title="Money Back Guarantee" image="" description="Not satisfied? Get a hassle-free refund." />
-      <BenefitItem title="Online Support" image="" description="24/7 help for a smooth shopping experience." />
+      <BenefitItem title="Fast & Free Delivery" image={img1} description="Free delivery on all orders" />
+      <BenefitItem title="Secure Payments" image={img2} description="Transactions are encrypted and secure." />
+      <BenefitItem title="Money Back Guarantee" image={img3} description="Not satisfied? Get a hassle-free refund." />
+      <BenefitItem title="Online Support" image={img4} description="24/7 help for a smooth shopping experience." />
     </section>
   );
 }

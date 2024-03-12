@@ -1,24 +1,19 @@
 /* BenefitsSection.css */
 
 .benefits {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
-  background-color: #f0f0f0;
 }
 
 .benefit-item {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center; 
-  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
 }
 
 .benefit-item img {
-  max-width: 100px; 
   margin-bottom: 10px;
 }
 

@@ -6,7 +6,7 @@ import SearchBox from "./SearchBox";
 
 
 function Header() {
-  const [showSearch, setShowSearch] = useState(true);
+  const [showSearch, setShowSearch] = useState(false);
   const [showLoginForm, setShowLoginForm] = useState(false);
 
   const toggleSearch = () => {
