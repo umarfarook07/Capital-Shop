@@ -1,20 +1,25 @@
-import React from 'react';
-import Header from './Components/Header/Header.jsx';
-import Home from './Components/Home/Home.jsx';
-import Footer from './Components/Footer/Footer.jsx';
-import Login from './Components/Registration/Login.jsx';
-import Cart from './Components/Cart/Cart.jsx';
-import Collections from './Components/Collections/Collections.jsx';
-import "./Styles/reset.css";
+import Header from './Header/Header.jsx';
+import Menu from './Menu/Menu.jsx';
+import HeroSection from './Hero-Section/HeroSection.jsx';
+import Footer from './Footer/Footer.jsx';
 import "./Styles/responsive.css";
+import SwiperMenu from './Swiper/SwiperMenu.jsx';
+import "./Styles/reset.css";
+import BenefitsSection from './Benefits-Section/BenefitsSection.jsx'
+import NewsletterSubscription from './NewsletterSubscription/NewsletterSubscription.jsx'
+
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Menu />
+      <SwiperMenu />
+      <HeroSection />
+      <BenefitsSection />
+      <NewsletterSubscription />
       <Footer />
     </>
   );
 }
 
-export default App;
+export default App
