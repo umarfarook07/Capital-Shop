@@ -1,164 +1,201 @@
-/* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-input{
-    border: 1px solid grey;
-    outline: none;
-}
-form{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 70%;
-    max-width: 80%;
-    padding: 40px 50px;
+.login-form,
+.signup-form,
+.forgotPasswordForm{
+    background-color: black;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 140px;
+    margin-bottom: 20px;
 }
 
-.login-header{
+.login-header h1,
+.signup-header h1,
+.form-header h1{
+    color: red;
+    margin-bottom: 20px;
+    font-size: 24px;
     text-align: center;
-    margin-bottom: 50px;
 }
-.login-header h1{
-    margin-bottom: 12px;
+
+.login-header p,
+.signup-header p,
+.form-header p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 18px;
+    text-align: center;
 }
-.login-header p{
-    font-size: 18px;
-}
-.data-input{ 
+
+.data-input label {
+    display: block;
     margin-bottom: 15px;
+    color: white;
 }
-.data-input label{
-    display: grid;  
-    margin-bottom: 15px;
-    font-size: 22px;
-}
+
 .data-input input {
     width: 100%;
-    padding: 15px 10px;
-    font-size: 18px;
-    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid red;   
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: black;
+    color: white;
+    outline: none;
 }
-.description,
-.login-footer{    
+.data-input input::placeholder{
+    color: white 0.5;
+}
+.description {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-}
-.description{
-    margin-top: 20px;
-   margin-bottom: 100px;
-}
-.description input {
-    margin-right: 8px;
-}
-.description label{
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    margin-top: 20px;
+    font-size: 14px;
 }
-.description a{
+
+.description a {
     color: red;
 }
-.login-footer{
-   margin-top: 100px;
-   margin-bottom: 20px;
+
+.login-footer,
+.signup-footer,
+.form-footer {
+    margin-top: 30px;
 }
-.login-footer span{
-    font-size: 18px;
-}
-.login-footer span a{
-    color: red;
-}
-.login-footer button{
+
+.login-footer button ,
+.signup-footer button,
+.form-footer button
+{
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px 0;
     background-color: red;
     color: white;
-    padding: 18px 36px;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.login-footer button:hover{
+.login-footer button:hover,
+.signup-footer button:hover,
+.form-footer button:hover {
     background-color: white;
     color: red;
 }
 
 
-@media screen and (max-width: 768px) {
-    .login-form {
-        width: 90%;
-        padding: 30px 40px;
-    }
 
-    .login-header h1 {
-        font-size: 24px;
-    }
-
-    .login-header p,
-    .data-input label,
-    .login-footer span {
-        font-size: 16px;
-    }
-
-    .data-input input,
-    .login-footer button {
-        padding: 12px 10px;
-    }
-
-    .login-footer button {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
+.error-message {
+    color: #ff3860;
+    font-size: 14px;
+    margin-top: 5px;
 }
-@media screen and (max-width: 480px) {
-    .login-form {
-        width: 100%;
-        padding: 20px 30px;
+@media only screen and (min-width: 280px){
+    .login-form ,
+    .signup-form,
+    .forgotPasswordForm{
+        width: 70%;
+        margin-top: 0px;
     }
-
-    .login-header h1 {
-        font-size: 20px;
+    .login-header h1,
+    .signup-header h1,
+    .form-header h1{
+        font-size: 16px;
     }
-
     .login-header p,
-    .data-input label,
-    .login-footer span {
-        font-size: 14px;
+    .signup-header p,
+    .form-header p {
+        font-size: 12px;
     }
-
-    .description,
-    .login-footer {
-        flex-direction: column;
-        align-items: flex-start;
+    .data-input label {
+        font-size: 12px;
+        margin-bottom: 8px;
     }
-
-    .description label,
-    .login-footer button {
-        width: 100%;
-    }
-
-    .description span,
-    .login-footer span {
+    .description {
         margin-top: 10px;
+        font-size: 12px;
     }
+    .login-footer,
+    .signup-footer,
+    .form-footer {
+        margin-top: 12px;
+    }
+    .login-footer span,
+    .signup-footer span,
+    .form-footer span {
+        font-size: 12px;
+    }
+    .login-footer button ,
+    .signup-footer button,
+    .form-footer button
+    {
+    margin-top: 8px;
+    padding: 8px 0;
+    font-size: 12px;
+    }
+    .error-message {
+        font-size: 8px;
+    }
+}
 
-    .login-footer button {
-        padding: 10px;
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .login-header h1,
+    .signup-header h1,
+    .form-header h1{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .login-header p,
+    .signup-header p,
+    .form-header p {
         font-size: 14px;
     }
+    .data-input label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .description {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    .login-footer,
+    .signup-footer,
+    .form-footer {
+        margin-top: 16px;
+    }
+    .login-footer span,
+    .signup-footer span,
+    .form-footer span {
+        font-size: 16px;
+    }
+    .login-footer button ,
+    .signup-footer button,
+    .form-footer button
+    {
+    margin-top: 10px;
+    padding: 12px 0;
+    font-size: 16px;
+    }
+    .error-message {
+        font-size: 8px;
+    }
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   
 }
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+      
+@media only screen and (min-width: 1200px) {
+    
 }
-body {
-    animation: fadeIn 0.5s ease-in-out;
-}
-.fade-out {
-    animation: fadeOut 0.5s ease-in-out;
-}
-

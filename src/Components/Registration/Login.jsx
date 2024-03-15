@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './styles.css'; // Make sure the path is correct
-
+import { Link } from 'react-router-dom';
+import './styles.css'; 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -8,7 +8,6 @@ function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // Handle the login logic here
         console.log({ email, password, keepLoggedIn });
     };
 
@@ -21,37 +20,29 @@ function Login() {
             <div className="data-input">
                 <label>
                     Email Address
-                    <input 
-                        type="email" 
-                        placeholder="Email Address" 
+                    <input
+                        type="email"
+                        placeholder="Email Address"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
-                
+
                 <label>
                     Password
-                    <input 
-                        type="password" 
-                        placeholder="Enter Password" 
+                    <input
+                        type="password"
+                        placeholder="Enter Password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </label>
             </div>
-            <div className="description">                       
-                <label>
-                    <input 
-                        type="checkbox" 
-                        checked={keepLoggedIn}
-                        onChange={(e) => setKeepLoggedIn(e.target.checked)}
-                    />
-                    Keep Me Logged In
-                </label>
-                <a href="/User-registration-form/forgot-password.html">Forgot Password?</a>
+            <div className="description">    
+            <Link to="/forgot-password">Forgot Password?</Link>
             </div>
             <div className="login-footer">
-                <span>Don't Have An Account ?<a href="/User-registration-form/signup.html"> SignUp </a>Here</span>
+                <span>Don't Have An Account ?<Link to="/signup"> SignUp </Link>Here</span>
                 <button type="submit">Login</button>
             </div>
         </form>
