@@ -13,7 +13,7 @@ function ForgotPassword() {
 
     return (
         
-            <form className='forgotPasswordForm' id="forgotPasswordForm" onSubmit={handleSubmit}>
+            <form className='form-container' id="forgotPasswordForm" onSubmit={handleSubmit}>
                 <div className="form-header">
                     <h1>Forgot Password</h1>
                     <p>Enter your email to reset your password</p>
