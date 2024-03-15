@@ -1,8 +1,16 @@
+:root {
+    --main-bg-color: black;
+    --main-text-color: white;
+    --accent-color: red;
+    --font-small: 12px;
+    --font-medium: 14px;
+    --font-large: 16px;
+    --font-xlarge: 24px;
+    --input-border: 1px solid var(--accent-color);
+}
 
-.login-form,
-.signup-form,
-.forgotPasswordForm{
-    background-color: black;
+.form-container {
+    background-color: var(--main-bg-color);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -13,20 +21,16 @@
     margin-bottom: 20px;
 }
 
-.login-header h1,
-.signup-header h1,
-.form-header h1{
-    color: red;
+.form-header h1 {
+    color: var(--accent-color);
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: var(--font-xlarge);
     text-align: center;
 }
 
-.login-header p,
-.signup-header p,
 .form-header p {
-    color: white;
-    font-size: 16px;
+    color: var(--main-text-color);
+    font-size: var(--font-large);
     margin-bottom: 18px;
     text-align: center;
 }
@@ -34,168 +38,121 @@
 .data-input label {
     display: block;
     margin-bottom: 15px;
-    color: white;
+    color: var(--main-text-color);
 }
 
 .data-input input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid red;   
+    border: var(--input-border);   
     border-radius: 4px;
-    box-sizing: border-box; 
-    background-color: black;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     outline: none;
 }
-.data-input input::placeholder{
-    color: white 0.5;
+
+.data-input input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
+
 .description {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: var(--font-medium);
 }
 
 .description a {
-    color: red;
+    color: var(--accent-color);
 }
 
-.login-footer,
-.signup-footer,
 .form-footer {
     margin-top: 30px;
 }
 
-.login-footer button ,
-.signup-footer button,
-.form-footer button
-{
+.form-footer button {
     width: 100%;
     margin-top: 18px;
     padding: 10px 0;
-    background-color: red;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: var(--font-large);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.login-footer button:hover,
-.signup-footer button:hover,
 .form-footer button:hover {
-    background-color: white;
-    color: red;
+    background-color: var(--main-text-color);
+    color: var(--accent-color);
 }
-
-
 
 .error-message {
     color: #ff3860;
-    font-size: 14px;
+    font-size: var(--font-medium);
     margin-top: 5px;
 }
-@media only screen and (min-width: 280px){
-    .login-form ,
-    .signup-form,
-    .forgotPasswordForm{
+
+@media only screen and (min-width: 280px) {
+    .form-container {
         width: 70%;
-        margin-top: 0px;
+        margin-top: 0 !important;
     }
-    .login-header h1,
-    .signup-header h1,
-    .form-header h1{
-        font-size: 16px;
+
+    .form-header h1 {
+        font-size: var(--font-large);
     }
-    .login-header p,
-    .signup-header p,
-    .form-header p {
-        font-size: 12px;
+
+    .form-header p,
+    .data-input label,
+    .description,
+    .form-footer button,
+    .error-message {
+        font-size: var(--font-small);
     }
-    .data-input label {
-        font-size: 12px;
-        margin-bottom: 8px;
-    }
-    .description {
-        margin-top: 10px;
-        font-size: 12px;
-    }
-    .login-footer,
-    .signup-footer,
+
     .form-footer {
         margin-top: 12px;
     }
-    .login-footer span,
-    .signup-footer span,
-    .form-footer span {
-        font-size: 12px;
+
+    .form-footer button {
+        margin-top: 8px;
+        padding: 8px 0;
     }
-    .login-footer button ,
-    .signup-footer button,
-    .form-footer button
-    {
-    margin-top: 8px;
-    padding: 8px 0;
-    font-size: 12px;
-    }
+
     .error-message {
         font-size: 8px;
     }
 }
 
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .login-header h1,
-    .signup-header h1,
-    .form-header h1{
+    .form-header h1 {
         font-size: 18px;
-        margin-top: 0px;
+        margin-top: 0;
     }
-    .login-header p,
-    .signup-header p,
-    .form-header p {
-        font-size: 14px;
+
+    .form-header p,
+    .data-input label,
+    .description,
+    .form-footer button {
+        font-size: var(--font-medium);
     }
-    .data-input label {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-    .description {
-        margin-top: 12px;
-        font-size: 14px;
-    }
-    .login-footer,
-    .signup-footer,
+
     .form-footer {
         margin-top: 16px;
     }
-    .login-footer span,
-    .signup-footer span,
-    .form-footer span {
-        font-size: 16px;
-    }
-    .login-footer button ,
-    .signup-footer button,
-    .form-footer button
-    {
-    margin-top: 10px;
-    padding: 12px 0;
-    font-size: 16px;
-    }
-    .error-message {
-        font-size: 8px;
+
+    .form-footer button {
+        margin-top: 10px;
+        padding: 12px 0;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-   
-}
-      
-@media only screen and (min-width: 1200px) {
-    
+@media only screen and (min-width: 992px) {
+    .form-container {
+         margin-top: 140px !important;
+    }
 }

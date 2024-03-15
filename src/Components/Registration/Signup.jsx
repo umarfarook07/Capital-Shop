@@ -18,8 +18,8 @@ function Signup() {
     };
 
     return (
-        <form id="signupForm" className="signup-form" onSubmit={handleSignup}>
-            <div className="signup-header">
+        <form id="signupForm" className="form-container" onSubmit={handleSignup}>
+            <div className="form-header">
                 <h1>Signup</h1>
                 <p>Enter your details to create an account</p>
             </div>
@@ -54,7 +54,7 @@ function Signup() {
                     />
                 </label>
             </div>
-            <div className="signup-footer">
+            <div className="form-footer">
             <span>Already have an account? <Link to="/login">Login</Link></span>                <button type="submit">Signup</button>
             </div>
         </form>

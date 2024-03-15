@@ -12,8 +12,8 @@ function Login() {
     };
 
     return (
-        <form id="loginForm" className="login-form" onSubmit={handleLogin}>
-            <div className="login-header">
+        <form id="loginForm" className="form-container" onSubmit={handleLogin}>
+            <div className="form-header">
                 <h1>Login</h1>
                 <p>Enter Login Details To Get Access</p>
             </div>
@@ -41,7 +41,7 @@ function Login() {
             <div className="description">    
             <Link to="/forgot-password">Forgot Password?</Link>
             </div>
-            <div className="login-footer">
+            <div className="form-footer">
                 <span>Don't Have An Account ?<Link to="/signup"> SignUp </Link>Here</span>
                 <button type="submit">Login</button>
             </div>
