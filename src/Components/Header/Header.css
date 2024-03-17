@@ -114,3 +114,52 @@ header nav button {
     transform: translate(-50%, -50%);
   }
 }
+@media only screen and (min-width: 280px){
+  header{
+      flex-direction: column;
+  }
+  .menu-nav{
+      display: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header{
+      flex-direction: row;
+  }
+  .menu-nav{
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header{
+      flex-direction: row;
+  }
+  .menu-nav{
+      display: block;
+  }
+  .menu-nav a{
+      font-size: 14px;
+  }
+  .search-box {
+      width: 50%;
+  }
+}
+    
+
+
+
+@media only screen and (min-width: 1200px) {
+  header{
+      flex-direction: row;
+  }
+  .menu-nav{
+      display: block;
+  }
+  .search-box {
+      width: 70%;
+  }
+}
