@@ -114,16 +114,17 @@ header nav button {
     transform: translate(-50%, -50%);
   }
 }
-@media only screen and (min-width: 280px){
+@media only screen and (max-width: 767px){
   header{
       flex-direction: column;
   }
   .menu-nav{
       display: none;
   }
+  .search-box{
+    width: 50%;
+  }
 }
-
-
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   header{
@@ -132,26 +133,18 @@ header nav button {
   .menu-nav{
       display: none;
   }
+  .search-box{
+    width: 60%;
+  }
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  header{
-      flex-direction: row;
-  }
-  .menu-nav{
-      display: block;
-  }
   .menu-nav a{
       font-size: 14px;
   }
   .search-box {
-      width: 50%;
+      width: 80%;
   }
 }
-    
-
-
-
 @media only screen and (min-width: 1200px) {
   header{
       flex-direction: row;

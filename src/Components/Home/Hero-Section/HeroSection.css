@@ -1,7 +1,6 @@
-
 .hero-section {
   padding: 20px;
-  margin: 120px;
+  margin: 20px; 
 }
 
 .collection-grid {
@@ -32,7 +31,6 @@
 
 .collection-grid div:hover img {
   transform: scale(1.1);
-  
 }
 
 .collection-grid span {
@@ -43,7 +41,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
@@ -51,31 +49,42 @@
 .collection-grid span:hover {
   color: red;
 }
-@media only screen and (min-width: 280px){
+
+@media only screen and (max-width: 767px) {
   .hero-section {
-      margin: 0;
+    margin: 20px 0; 
   }
-  .collection-grid div {
+  .collection-grid div{
     height: 150px;
   }
-.collection-grid span {
-  font-size: 0.65em;
+  .collection-grid span {
+    font-size: 0.8rem;
+  }
 }
-}
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-section {
-      margin: 0;
+    padding: 20px;
+    margin: 20px 0;
   }
 }
+
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hero-section{
-      padding: 30px;
-      margin-top: 120px;
+  .hero-section {
+    padding: auto 120px;
+    margin-top: 60px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .hero-section{
-      padding: 40px;
-      margin-top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .collection-grid {
+    display: flex;
+    
   }
 }

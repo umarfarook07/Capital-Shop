@@ -63,7 +63,7 @@
 .menu-list li:hover{    
     color: red;
 }
-@media only screen and (min-width: 280px){
+@media only screen and (max-width: 767px){
     .menu-row{
         display: flex;
         margin-top: 130px;

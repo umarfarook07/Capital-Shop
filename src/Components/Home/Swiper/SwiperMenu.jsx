@@ -31,13 +31,13 @@ export default function SwiperMenu() {
         <SwiperSlide>
           <img src={Banner1} alt="Cover-Banner" />
           <div className="sale-div">
-          <SaleComponent />
+          <SaleComponent cat = "Men's" />
           </div>
           </SwiperSlide>
           <SwiperSlide>
           <img src={Banner2} alt="Cover-Banner" />
           <div className="sale-div"> 
-          <SaleComponent />
+          <SaleComponent cat = "Women's" />
           </div>
           </SwiperSlide>
       </Swiper>

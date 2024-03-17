@@ -49,8 +49,8 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .swiper-slide {
-      font-size: 14px;
+  .swiper {
+    height: 400px;
   }
 }
 
