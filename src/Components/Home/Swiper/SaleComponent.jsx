@@ -4,9 +4,9 @@ import './SaleComponent.css'
 const SaleComponent = () => {
   return (
     <>
-      <h2>Fashion sale</h2>
-      <h1>Minimal Menz style</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, laboriosam.</p>
+      <h2>Exclusive Season Sale</h2>
+      <h1>Up to 50% Off on Men's Wear</h1>
+      <p>Discover our latest collection of men's fashion items with incredible discounts.</p>
       <button>SHOP NOW</button>
     </>
   )
