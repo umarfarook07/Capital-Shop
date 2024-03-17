@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 
 import './styles.css';
 
+import SaleComponent from './SaleComponent';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function SwiperMenu() {
@@ -27,8 +28,18 @@ export default function SwiperMenu() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={Banner1} alt="Cover-Banner" /></SwiperSlide>
-        <SwiperSlide><img src={Banner2} alt="Cover-Banner" /></SwiperSlide>
+        <SwiperSlide>
+          <img src={Banner1} alt="Cover-Banner" />
+          <div className="sale-div">
+          <SaleComponent />
+          </div>
+          </SwiperSlide>
+          <SwiperSlide>
+          <img src={Banner2} alt="Cover-Banner" />
+          <div className="sale-div"> 
+          <SaleComponent />
+          </div>
+          </SwiperSlide>
       </Swiper>
     </>
   );
