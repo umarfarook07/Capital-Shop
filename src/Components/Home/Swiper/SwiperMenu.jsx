@@ -5,7 +5,8 @@ import React, { useRef, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Banner1 from './images/cover-banner1.jpg';
-import Banner2 from './images/cover-banner2.jpg';
+import Banner3 from './images/cover-banner3.jpg';
+
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,7 +36,7 @@ export default function SwiperMenu() {
           </div>
           </SwiperSlide>
           <SwiperSlide>
-          <img src={Banner2} alt="Cover-Banner" />
+          <img src={Banner3} alt="Cover-Banner" />
           <div className="sale-div"> 
           <SaleComponent cat = "Women's" />
           </div>

@@ -45,7 +45,7 @@ function Header() {
         </div>
 
         <div className="cart-btn">
-          <Link to="/cart">
+          <Link to="/new">
             <button>
               <i className="bx bxs-cart"></i>
             </button>
