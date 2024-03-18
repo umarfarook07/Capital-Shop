@@ -32,6 +32,7 @@ function App() {
         <Route path="/WomensCollection" element={<WomensCollection />} />
         <Route path="/BabyCollection" element={<BabyCollection />} />
         <Route path="*" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </BrowserRouter>
