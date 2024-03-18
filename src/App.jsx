@@ -1,3 +1,4 @@
+import "./Styles/reset.css";
 // App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -12,8 +13,8 @@ import Cart from './Components/Cart/Cart';
 import Collections from './Components/Collections/Collections';
 import AddProductForm from './Components/Collections/AddProductForm';
 import MensCollection from './Components/Collections/MensCollection';
-import "./Styles/reset.css";
-import "./Styles/responsive.css";
+import { WomensCollection } from "./Components/Collections/WomensCollection";
+import { BabyCollection } from "./Components/Collections/BabyCollection";
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/collections" element={<Collections />} />
-        <Route path="/new" element={<MensCollection />} />
+        <Route path="/MensCollection" element={<MensCollection />} />
+        <Route path="/WomensCollection" element={<WomensCollection />} />
+        <Route path="/BabyCollection" element={<BabyCollection />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
