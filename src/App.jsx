@@ -11,6 +11,7 @@ import ForgotPassword from './Components/Registration/ForgotPassword';
 import Cart from './Components/Cart/Cart';
 import Collections from './Components/Collections/Collections';
 import AddProductForm from './Components/Collections/AddProductForm';
+import MensCollection from './Components/Collections/MensCollection';
 import "./Styles/reset.css";
 import "./Styles/responsive.css";
 
@@ -26,7 +27,7 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/collections" element={<Collections />} />
-        <Route path="/new" element={<AddProductForm />} />
+        <Route path="/new" element={<MensCollection />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
