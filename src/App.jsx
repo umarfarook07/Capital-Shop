@@ -28,9 +28,9 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/collections" element={<Collections />} />
-        <Route path="/MensCollection" element={<MensCollection />} />
-        <Route path="/WomensCollection" element={<WomensCollection />} />
-        <Route path="/BabyCollection" element={<BabyCollection />} />
+        <Route path="/MensCollection" element={<Collections />} />
+        <Route path="/WomensCollection" element={<Collections />} />
+        <Route path="/BabyCollection" element={<Collections />} />
         <Route path="*" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
