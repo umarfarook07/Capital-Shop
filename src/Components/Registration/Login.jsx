@@ -6,9 +6,26 @@ function Login() {
     const [password, setPassword] = useState('');
     const [keepLoggedIn, setKeepLoggedIn] = useState(false);
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
-        console.log({ email, password, keepLoggedIn });
+
+        try{
+            const response = await fetch('http://localhost:3001/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: email,
+                    password: password
+                })
+            });
+            const data = await response.json();
+        }
+        catch(err){
+            console.error('Error during the login process:', error);
+        }
+        
     };
 
     return (
